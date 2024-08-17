@@ -1,0 +1,26 @@
+# Get API
+GET http://localhost:7070/
+
+POST http://localhost:7070/users/register/
+Content-Type: application/json
+
+{
+    "username": "Ram",
+    "email": "ram@hari.com",
+    "password": "abhishek"
+}
+
+POST http://localhost:7070/users/login/
+Content-Type: application/json
+
+{
+    "email": "ram@hari.com",
+    "password": "abhishek"
+}
+
+GET http://localhost:7070/users/me/
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YmNiOGQ1ZGNiZDFhMTJmODVmODhmNCIsImVtYWlsIjoicmFtQGhhcmkuY29tIiwiaWF0IjoxNzIzNjQ0MTg2fQ.qup5bT2C1cgnrwPHiUpZ_gHZ3hY29GhiI25dkC_qcF8
+
+
+
